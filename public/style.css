@@ -1,0 +1,198 @@
+/* Background Images: General Styles */
+
+.hero {
+	height: 95vh;
+	background-image: url("./images/coffee.jpg");
+	background-size: cover;
+	background-position: center;
+	color: rgb(243, 243, 243);
+}
+
+/* Background Images: Page Specific Styles */
+
+.hero.index {
+	background-image: url("./images/coffee.jpg");
+}
+
+.hero.contact {
+	background-image: url("./images/hand.jpg");
+}
+
+.hero.portfolio {
+	background-image: url("./images/road.jpg");
+}
+
+/* General Content Images */
+
+.content-image {
+	width: 100%;
+	transition: filter 200ms ease-in, opacity 200ms ease-in;
+}
+
+/* General Content Images: 
+Grayout images on hover. Exclude profile picture from effect. */
+.content-image:hover:not(#profile-pic-image) {
+	filter: grayscale(50%);
+	opacity: 0.5;
+}
+
+/* About Me Page */
+
+#about-me {
+	background-color: #333;
+	color: rgb(243, 243, 243);
+	text-align: justify;
+	padding: 3vh 3vw;
+	margin-top: 10vh;
+	margin-bottom: 10vh;
+	border-radius: 10px;
+}
+
+#profile-pic-container {
+	height: 90vh;
+	overflow: hidden;
+}
+
+#profile-pic-image,
+#weather-app-image {
+	width: 100%;
+}
+
+#about-me-text {
+	margin-top: 4vh;
+}
+
+#certificates-list {
+	list-style-type: none;
+}
+
+.certificates,
+.about-links {
+	text-decoration: none;
+	color: rgb(243, 243, 243);
+	font-weight: 800;
+}
+
+.certificates:hover,
+.about-links:hover {
+	color: rgb(167, 167, 167);
+	text-decoration: none;
+}
+
+/* Portfolio Page */
+
+#portfolio {
+	margin-top: 10vh;
+	margin-bottom: 10vh;
+}
+
+.card {
+	height: 100%;
+}
+
+.card-container {
+	margin-bottom: 5vh;
+}
+
+/* Portfolio Page: Center Card Content */
+.card-body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+/* Contact Page*/
+
+#contact {
+	background-color: #333;
+	color: rgb(243, 243, 243);
+	padding: 3vh 3vw;
+	margin-top: 10vh;
+	margin-bottom: 10vh;
+}
+
+#notification {
+	text-align: center;
+	font-size: 1.3rem;
+	font-weight: 100;
+}
+
+/* Footer */
+
+#footer {
+	background-color: #333;
+	color: rgb(243, 243, 243);
+	padding: 3vh 0;
+	text-align: center;
+}
+
+#signature {
+	font-weight: 800;
+	font-size: 1.1rem;
+}
+
+#webdev {
+	font-weight: 200;
+	font-size: 0.8rem;
+}
+
+#my-github {
+	margin-bottom: 0;
+}
+
+/* Responsive Behavior */
+/* Changes Large Size Screens and Up */
+@media screen and (min-width: 1200px) {
+	/* About Me Page*/
+	#about-me-text-bottom {
+		margin-top: 4vh;
+	}
+}
+
+/* Changes Medium Size Screens and Up */
+@media screen and (min-width: 992px) {
+	/* About Me Page*/
+	#about-me-text {
+		margin-top: 0;
+	}
+
+	#profile-pic-container {
+		height: 100%;
+		overflow: auto;
+	}
+
+	/* Portfolio Page */
+	.card-container.bottom {
+		margin-bottom: 0;
+	}
+
+	#resume {
+		width: 15%;
+	}
+
+	/* Contact Page*/
+	.contact {
+		color: #333;
+	}
+
+	#form-button {
+		width: 15%;
+	}
+}
+
+/* Changes Small Size Screens and Up */
+@media screen and (max-width: 768px) {
+	/* About Me Page */
+	#profile-pic-container {
+		height: 100%;
+		overflow: auto;
+	}
+}
+
+/* Changes for Extra Small Screens and Up */
+@media screen and (min-width: 576px) {
+	/* Contact Page*/
+	#contact {
+		border-radius: 10px;
+	}
+}
