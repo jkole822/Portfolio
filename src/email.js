@@ -18,7 +18,7 @@ const email = (email, name, message) => {
 				Html: {
 					// HTML Format of the email
 					Charset: "UTF-8",
-					Data: `<html><body><h2>Message from ${name}</h2><p>${message}</p>s<p>Contact: ${email}</p></body></html>`,
+					Data: `<html><body><h2>Message from ${name}</h2><p>${message}</p><p>Contact: ${email}</p></body></html>`,
 				},
 			},
 			Subject: {
