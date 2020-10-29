@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const path = require("path");
 const app = express();
 const port = process.env.PORT || 3000;
-const sendEmail = require("./email");
+const email = require("./email");
 
 const publicDirectory = path.join(__dirname, "../public");
 
@@ -28,7 +28,7 @@ app.get("/contact", (req, res) => {
 });
 
 app.post("/sendEmail", async (req, res) => {
-	await sendEmail(req.body.email, req.body.name, req.body.message);
+	await email(req.body.email, req.body.name, req.body.message);
 	res.render("contact", { message: "Email Sent" });
 });
 
