@@ -58,23 +58,33 @@ Grayout images on hover. Exclude profile picture from effect. */
 	width: 100%;
 }
 
+.section-heading {
+	font-size: 1.75rem;
+	font-weight: 200;
+}
+
 #about-me-text {
 	margin-top: 4vh;
+	line-height: 1.6;
+}
+
+#about-me-text-bottom .col {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 #certificates-list {
 	list-style-type: none;
 }
 
-.certificates,
-.about-links {
+.certificates {
 	text-decoration: none;
 	color: rgb(243, 243, 243);
-	font-weight: 800;
+	font-weight: 700;
 }
 
-.certificates:hover,
-.about-links:hover {
+.certificates:hover {
 	color: rgb(167, 167, 167);
 	text-decoration: none;
 }
@@ -152,6 +162,7 @@ Grayout images on hover. Exclude profile picture from effect. */
 /* Changes Medium Size Screens and Up */
 @media screen and (min-width: 992px) {
 	/* About Me Page*/
+
 	#about-me-text {
 		margin-top: 0;
 	}
@@ -161,13 +172,18 @@ Grayout images on hover. Exclude profile picture from effect. */
 		overflow: auto;
 	}
 
-	/* Portfolio Page */
-	.card-container.bottom {
-		margin-bottom: 0;
+	#resume-container {
+		display: flex;
+		justify-content: center;
 	}
 
 	#resume {
-		width: 15%;
+		width: 20%;
+	}
+
+	/* Portfolio Page */
+	.card-container.bottom {
+		margin-bottom: 0;
 	}
 
 	/* Contact Page*/
