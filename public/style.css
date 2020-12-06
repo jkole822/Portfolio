@@ -148,7 +148,8 @@ Grayout images on hover. Exclude profile picture from effect. */
 
 #my-github,
 #my-phone,
-#my-email {
+#my-email,
+#my-linkedin {
 	margin-bottom: 0;
 }
 
