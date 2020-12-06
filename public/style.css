@@ -146,7 +146,9 @@ Grayout images on hover. Exclude profile picture from effect. */
 	font-size: 0.8rem;
 }
 
-#my-github {
+#my-github,
+#my-phone,
+#my-email {
 	margin-bottom: 0;
 }
 
